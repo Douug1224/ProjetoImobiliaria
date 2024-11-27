@@ -1,16 +1,19 @@
-package ProjetoImobiliaria;
+package ProjetoImobiliaria.main;
 
-import br.com.imobiliaria.model.Casa;
-import br.com.imobiliaria.model.Cliente;
-import br.com.imobiliaria.model.Vendedor;
+import ProjetoImobiliaria.model.Casa;
+import ProjetoImobiliaria.model.Apartamento;
+import ProjetoImobiliaria.model.Cliente;
+import ProjetoImobiliaria.model.Vendedor;
 
 public class Main {
     public static void main(String[] args) {
-        Casa casa1 = new Casa("Rua ABC, 123", 500000.0, 3);
-        Cliente cliente1 = new Cliente("Alice", "123.456.789-00");
-        Vendedor vendedor1 = new Vendedor("Bob", "987.654.321-00", 5000.0);
+        Casa casa1 = new Casa("Rua Leao coroado, 171", 750837.0, 7);
+        Apartamento ap1 = new Apartamento("Avenida Mariana Amalia, 882", 502000.0, 2);
+        Cliente cliente1 = new Cliente("Ricardo", "129.356.784-34");
+        Vendedor vendedor1 = new Vendedor("Bob", "087.694.321-50", 4750.0);
 
-        casa1.exibirDetalhes();
+        System.out.println(casa1.exibirDetalhes());
+        System.out.println(ap1.exibirDetalhes());
         cliente1.exibirInformacoes();
         vendedor1.exibirInformacoes();
     }
